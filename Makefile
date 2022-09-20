@@ -2,7 +2,7 @@ CXX=g++
 CXXFLAGS=-std=c++17 -g -pedantic -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer
 
 
-SRCS=memory.cpp
+SRCS=numbers.cpp
 BINS=$(patsubst %.cpp,%.exe,$(SRCS))
 DEPS=
 
@@ -19,4 +19,4 @@ all: clean $(BINS)
 .PHONY: clean
 
 clean:
-	rm -f memory
+	rm -f numbers
